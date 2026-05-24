@@ -1,0 +1,6 @@
+{
+  "name": "Strike Ops",
+  "description": "A high-fidelity tactical offline mobile shooter featuring realistic visuals, a deep campaign mode, customizable loadouts, tactical multiplayer combat with bot AI, complete physical game controller support, and detailed ergonomics/haptic options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,21 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Strike Ops: AI-Integrated Tactical Shooter
 
-# Run and deploy your AI Studio app
+Strike Ops is a groundbreaking mobile shooter for Android that explores the intersection of traditional gaming mechanics and artificial intelligence. This project serves as a technical demonstration of how AI can be leveraged to assist in the generation of complex game assets, logic, and environmental design.
 
-This contains everything you need to run your app locally.
+Featuring responsive controls and an optimized rendering engine, Strike Ops showcases the potential of modern Android gaming architectures.
 
-View your app in AI Studio: https://ai.studio/apps/fb32e6e0-c64a-4e00-9d6b-178ce8f04de0
+## 🎮 Building the Project
 
-## Run Locally
+Follow these steps to compile and run the Strike Ops source code.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+### Prerequisites
 
+- [Android Studio](https://developer.android.com/studio)
+- A device or emulator with OpenGL ES 3.0+ support
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+### Setup Instructions
+
+1. **Initialize Project**
+   Open the repository in Android Studio.
+
+2. **Sync and Repair**
+   Allow the IDE to complete the Gradle sync. If prompted to fix incompatibilities or update the Android Gradle Plugin, proceed with the recommended fixes to ensure project stability.
+
+3. **Enable AI Logic Engine**
+   The game's dynamic elements are powered by an external model.
+   - Define your credentials in a `.env` file at the project root.
+   - Requirement: `GEMINI_API_KEY=your_key_here`
+
+4. **Local Build Configuration**
+   To avoid signing conflicts during local development, ensure that the `build.gradle.kts` file is configured to use your local debug configuration rather than a production signing key.
+
+5. **Execution**
+   Connect your Android device and execute the **Run** command. Enjoy the technical showcase of Strike Ops.
